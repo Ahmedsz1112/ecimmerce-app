@@ -1,0 +1,522 @@
+:root {
+    --main-color: #e65f78;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.text-pink {
+    color: var(--main-color);
+}
+
+
+/* start nav */
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 30px;
+    color: #000000;
+}
+
+.main-nav {
+    background-color: rgb(255, 255, 255);
+}
+
+.main-nav .navbar .nav-item .nav-link {
+    color: #000;
+}
+
+.main-nav .navbar .nav-item .nav-link.active {
+    color: var(--main-color);
+}
+
+.main-nav .navbar .nav-item .nav-link.active::after {
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+.main-nav .navbar .nav-item .nav-link:hover {
+    color: var(--main-color);
+}
+
+.main-nav .navbar .nav-link {
+    position: relative;
+    margin-inline: 0.5rem;
+    overflow: hidden;
+}
+
+.main-nav .navbar .nav-link::after {
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: all 1s;
+}
+
+.main-nav .navbar .nav-link:hover::after {
+    left: 0;
+}
+
+.main-drop {
+    position: relative;
+}
+
+.main-drop .main-menu {
+    display: none;
+    position: absolute;
+    top: 150%;
+    transition: all 1s;
+}
+
+.main-drop:hover .main-menu {
+    display: block;
+    top: 100%;
+    transition: all 1s;
+}
+
+.deep-drop {
+    position: relative;
+    display: block;
+}
+
+.deep-drop .deep-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transition: all 1s;
+}
+
+.deep-drop:hover .deep-menu {
+    display: block;
+}
+
+
+/* end nav */
+
+.home {
+    background-image: url(../image/01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    transition: all 1s !important;
+}
+
+.typewriter {
+    width: 40%;
+    margin: auto;
+}
+
+.typewriter h1::after {
+    content: "";
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 7s 2s infinite, blink-caret 5s 2s infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    0% {
+        content: "A";
+    }
+    3% {
+        content: "A p";
+    }
+    6% {
+        content: "A Pa";
+    }
+    9% {
+        content: "A Par";
+    }
+    12% {
+        content: "A Para";
+    }
+    15% {
+        content: "A Parag";
+    }
+    18% {
+        content: "A Paragr";
+    }
+    21% {
+        content: "A Paragra";
+    }
+    24% {
+        content: "A Paragrap";
+    }
+    27% {
+        content: "A Paragraph";
+    }
+    30% {
+        content: "A Paragrap";
+    }
+    33% {
+        content: "A Paragra";
+    }
+    36% {
+        content: "A Paragr";
+    }
+    39% {
+        content: "A Parag";
+    }
+    42% {
+        content: "A Para";
+    }
+    45% {
+        content: "A Par";
+    }
+    48% {
+        content: "A Pa";
+    }
+    51% {
+        content: "A P";
+    }
+    54% {
+        content: "A";
+    }
+    57% {
+        content: "A f";
+    }
+    60% {
+        content: "A fr";
+    }
+    63% {
+        content: "A fro";
+    }
+    66% {
+        content: "A fron";
+    }
+    69% {
+        content: "A front";
+    }
+    72% {
+        content: "A front e";
+    }
+    75% {
+        content: "A front en";
+    }
+    78% {
+        content: "A front end";
+    }
+    81% {
+        content: "A front end";
+    }
+    84% {
+        content: "A front en";
+    }
+    87% {
+        content: "A front en";
+    }
+    90% {
+        content: "A front ";
+    }
+    93% {
+        content: "A fron";
+    }
+    96% {
+        content: "A fr";
+    }
+    99% {
+        content: "A ";
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--main-color);
+    }
+}
+
+.mover {
+    font-size: 30px;
+    color: var(--main-color);
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    animation: move 1s infinite alternate;
+}
+
+.mover .scroll {
+    color: var(--main-color) !important;
+}
+
+@keyframes move {
+    0% {
+        bottom: 5px;
+    }
+    30% {
+        bottom: 10px;
+    }
+    60% {
+        bottom: 15px;
+    }
+    90% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: 25px;
+    }
+}
+
+.icon-border {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px #d1cdcd solid !important;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-border:hover {
+    color: var(--main-color);
+    border-color: var(--main-color) !important;
+}
+
+.text-q {
+    font-size: 24px !important;
+}
+
+#services {
+    padding: 60px 0 !important;
+}
+
+
+/* ===================== */
+
+.nav .nav-item .nav-link {
+    color: #000000;
+    margin: 0 5px;
+    transition: all .5s;
+}
+
+.nav .nav-item .nav-link:hover,
+.nav .nav-item .nav-link.active {
+    color: #ffffff;
+    background-color: var(--main-color);
+}
+
+.navs-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.navs-image img {
+    transition: all .5s;
+}
+
+.navs-image:hover img {
+    transform: scale(1.1);
+}
+
+.image-layer:hover {
+    opacity: 1;
+    cursor: pointer
+}
+
+.image-layer {
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.image-layer div {
+    position: absolute;
+    bottom: 0;
+    transition: all .5s;
+}
+
+.image-layer:hover div {
+    bottom: 30%;
+}
+
+.carousel-indicators button {
+    padding: 5px !important;
+    width: 10px !important;
+    background-color: #e65f78 !important;
+    border-radius: 40% !important;
+}
+
+.carousel-indicators button.active {
+    width: 15px !important;
+}
+
+.client-review {
+    font-size: 18px;
+    width: 66%;
+}
+
+.section-subtitle {
+    max-width: 500px;
+}
+
+#client {
+    background-color: #faf2f2;
+}
+
+.card .card-body {
+    position: relative;
+}
+
+.card .card-body h4::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 55%;
+    left: 50%;
+    background-color: #e65f78;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+
+.card .card-body:hover h4::after {
+    width: 70px;
+}
+
+.btn-custom {
+    background-color: #e65f78;
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+.btn-custom:hover {
+    background-color: #e65f78b2;
+    color: white;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+
+/* ================ */
+
+.port-head {
+    padding: 50px;
+}
+
+.form-control {
+    box-shadow: none !important;
+    border: 2px solid #d8d8d8 !important;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    border-color: #e65f78 !important;
+}
+
+.send {
+    opacity: 0 !important;
+    background-color: aqua;
+}
+
+
+/* ================ */
+
+footer {
+    color: rgba(255, 255, 255, 0.637) !important;
+}
+
+
+/* start side gear */
+
+.side-box {
+    position: fixed;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #000000e3;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* end side gear */
+
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1140px;
+    }
+}

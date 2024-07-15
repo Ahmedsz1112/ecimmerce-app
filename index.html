@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>Kerri | Responsive Bootstrap</title>
+    <link rel="shortcut icon" href="image/02.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
+    <!--start navbar -->
+    <header id="mainNav" class="main-nav fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">Kerri</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#client">Client</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown main-drop">
+                    <a class="nav-link dropdown-toggle"  role="button"  aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu main-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <div class="btn-group deep-drop">
+                            <button class="dropdown-item dropdown-toggle" type="button" aria-expanded="false">
+                              Manual close
+                            </button>
+                            <ul class="dropdown-menu deep-menu">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- end navbar -->
+    <main>
+    <!-- start Home -->
+      <section id="home">
+        <div class="home">
+          <div class="layer">
+            <div class="container text-white text-center">
+              <h4 class="my-3">Welcome</h4>
+              <div class="typewriter">
+                <h1></h1>
+              </div>
+              <p class="my-3 w-50 m-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+              <button type="button" class="btn btn-outline-light rounded-pill p-3 fw-bold my-3 domm">DOWNLOAD CV</button>
+            </div>
+            <div id="about" class="mover">
+              <a href="#about" class="scroll">
+                <i class="fa-solid fa-angles-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end Home -->
+    <!-- start about -->
+    <section id="about" class="p-4 my-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="about-image border p-2">
+              <img src="image/16.jpg" class="w-100" alt="">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="about-contaext">
+              <h2><span class="fw-bold">About</span> me</h2> 
+              <p class="mt-4 text-q">Hello!<span class="text-pink fw-bold"> I'M Kerri Deo.</span></p>
+              <p class="text-white text-muted my-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              <p class="text-white text-muted my-3">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              <p class="text-white text-muted my-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+              <div class="social-icons d-flex my-3">
+                <div class=" p-0 m-2 border fs-5 icon-border"><i class="fa-brands fa-facebook"></i></div>
+                <div class=" p-0 m-2 border fs-5 icon-border"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class=" p-0 m-2 border fs-5 icon-border"><i class="fa-brands fa-linkedin"></i></div>
+                <div class=" p-0 m-2 border fs-5 icon-border"><i class="fa-brands fa-github"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about -->
+    <!-- ========================= -->
+    <section id="services" class="p-4 bg-body-secondary ">
+      <div class="container">
+        <div class="port-head text-center">
+          <h2>Our <span class="fw-bold">Services</span></h2>
+          <p class=" mx-auto text-muted mt-3 section-subtitle">It is a long established fact that a reader will be of a page when established</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <div class="card bg-body-secondary">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-earth-americas fs-1 text-pink my-3"></i>
+                <h4 class="card-title fw-bold my-4">Graphic Design</h4>
+                <p class="card-text text-muted my-3">WThere are many variations of passages of but the majority have suffered alteration in some form.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <div class="card bg-body-secondary">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-headphones fs-1 text-pink my-3"></i>
+                <h4 class="card-title fw-bold my-4">Graphic Design</h4>
+                <p class="card-text text-muted my-3">WThere are many variations of passages of but the majority have suffered alteration in some form.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <div class="card bg-body-secondary">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-gift fs-1 text-pink my-3"></i>
+                <h4 class="card-title fw-bold my-4">Graphic Design</h4>
+                <p class="card-text text-muted my-3">WThere are many variations of passages of but the majority have suffered alteration in some form.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <div class="card bg-body-secondary">
+              <div class="card-body text-center">
+                <i class="fa-regular fa-circle-down fs-1 text-pink my-3"></i>
+                <h4 class="card-title fw-bold my-4">Graphic Design</h4>
+                <p class="card-text text-muted my-3">WThere are many variations of passages of but the majority have suffered alteration in some form.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <div class="card bg-body-secondary">
+              <div class="card-body text-center">
+                <i class="fa-solid fa-rotate-right fs-1 text-pink my-3"></i>
+                <h4 class="card-title fw-bold my-4">Graphic Design</h4>
+                <p class="card-text text-muted my-3">WThere are many variations of passages of but the majority have suffered alteration in some form.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 ">
+            <div class="card bg-body-secondary">
+              <div class="card-body text-center">
+                <i class="fa-regular fa-bookmark fs-1 text-pink my-3"></i>
+                <h4 class="card-title fw-bold my-4">Graphic Design</h4>
+                <p class="card-text text-muted my-3">WThere are many variations of passages of but the majority have suffered alteration in some form.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= -->
+    <div class="container section">
+      <div class="text-center p-4 my-4">
+        <h2 class="my-3 fw-bold">I Am Available For Freelancer.</h2>
+        <button type="button" class="btn btn-custom mt-4">HERE ME!</button>
+      </div>
+    </div>
+    <!-- ========================= -->
+    <!-- start client -->
+    <section id="client" class="p-4 bg-body-secondary">
+      <div class="container">
+        <div class="port-head text-center my-4 ">
+          <h2>Our <span class="fw-bold">Client</span></h2>
+          <p class=" mx-auto text-muted mt-3 section-subtitle">It is a long established fact that a reader will be of a page when established</p>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide ">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="fs-1 text-pink p-4 mx-auto w-50 text-center">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <img src="image/05.jpg" class="d-block mx-auto w-15 rounded-circle border p-1" alt="...">
+              <p class="client-review text-center text-muted mt-4  fst-italic mx-auto " >"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using" Content " here</p>
+            </div>
+            <div class="carousel-item">
+              <div class="fs-1 text-pink p-4 mx-auto w-50 text-center">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <img src="image/19.jpg" class="d-block mx-auto w-15 rounded-circle border p-1" alt="...">
+              <p class="client-review text-center text-muted mt-4  fst-italic mx-auto" >"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using" Content " here</p>
+            </div>
+            <div class="carousel-item">
+              <div class="fs-1 text-pink p-4 mx-auto w-50 text-center">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <img src="image/08.jpg" class="d-block mx-auto w-15 rounded-circle border p-1" alt="...">
+              <p class="client-review text-center text-muted mt-4 fst-italic mx-auto" >"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using" Content " here</p>
+            </div>
+          </div>
+          <div class="carousel-indicators position-static my-3">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end client -->
+    <!-- start Portfolio -->
+    <section id="portfolio" class="p-4 my-4">
+      <div class="port-head text-center my-3">
+        <h2>Our <span class="fw-bold">Works</span></h2>
+        <p class="mx-auto text-muted">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+      </div>
+      <ul class="nav nav-pills mb-3 d-flex justify-content-center mt-5" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-home" aria-selected="true">ALL</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill" id="pills-seo-tab" data-bs-toggle="pill" data-bs-target="#pills-seo" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SEO</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">WEBDESIGN</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill" id="pills-work-tab" data-bs-toggle="pill" data-bs-target="#pills-work" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">WORK</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill" id="pills-press-tab" data-bs-toggle="pill" data-bs-target="#pills-press" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">WORDPRESS</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/20.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/03.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/06.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/21.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/07.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/14.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-seo" role="tabpanel" aria-labelledby="pills-seo-tab" tabindex="0">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/03.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-layer text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/06.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/07.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab" tabindex="0">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/20.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/03.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/06.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/21.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/07.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab" tabindex="0">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/07.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/14.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-press" role="tabpanel" aria-labelledby="pills-press-tab" tabindex="0">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/20.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/03.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                <div class="navs-image">
+                  <img src="image/06.jpg" class="w-100" alt="">
+                  <div class="image-layer">
+                    <div class="text-center">
+                      <p>Category</p>
+                      <h3>Project Title</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Portfolio -->
+    <!-- start blog -->
+    <section id="blog" class="p-4 bg-body-secondary section">
+      <div class="container">
+        <div class="port-head text-center my-4 ">
+          <h2>Our <span class="fw-bold">Client</span></h2>
+          <p class=" mx-auto text-muted mt-3 section-subtitle">It is a long established fact that a reader will be of a page when established</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card border p-2">
+              <img src="image/04.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-5 fw-bold">There are many variations</h5>
+                <p>11 March 2018 <span><a href="#home" class="btn text-pink fw-bold">By Kerri</a></span></p>
+                <p class="card-text text-muted">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
+                <p><a href="#home" class="link-underline-light fw-bold text-muted ">Read More...</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card border p-2">
+              <img src="image/12.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-5 fw-bold">There are many variations</h5>
+                <p class="text-muted">11 March 2018 <span><a href="#home" class="btn text-pink fw-bold">By Kerri</a></span></p>
+                <p class="card-text text-muted">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
+                <p><a href="#home" class="link-underline-light fw-bold text-muted">Read More...</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card border p-2">
+              <img src="image/10.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-5 fw-bold">There are many variations</h5>
+                <p>11 March 2018 <span><a href="#home" class="btn text-pink fw-bold">By Kerri</a></span></p>
+                <p class="card-text text-muted">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.</p>
+                <p><a href="#home" class="link-underline-light fw-bold text-muted">Read More...</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end blog -->
+    <!-- start contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="port-head text-center my-4 ">
+          <h2><span class="fw-bold">Contact</span> Us</h2>
+          <p class=" mx-auto text-muted mt-3 section-subtitle">It is a long established fact that a reader will be of a page when established</p>
+        </div>
+        <div class="row pb-5">
+          <div class="col-ms-12 col-md-6 col-lg-4">
+            <div class="mx-auto text-center">
+              <i class="fa-solid fa-mobile-screen-button text-pink fs-1 p-4 "></i>
+              <h5>Call Us On</h5>
+              <p class="text-muted">+985 123 7856</p>
+            </div>
+          </div>
+          <div class="col-ms-12 col-md-6 col-lg-4">
+            <div class="mx-auto text-center">
+              <i class="fa-regular fa-envelope text-pink fs-1 p-4"></i>
+              <h5>Email Us At</h5>
+              <p class="text-muted">Website.Kerri@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-ms-12 col-md-6 col-lg-4">
+            <div class="mx-auto text-center">
+              <i class="fa-regular fa-hand text-pink fs-1 p-4"></i>
+              <h5>Visit Office</h5>
+              <p class="text-muted">202, Grasselli Street , Conway.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Your name..." aria-label="Your name...">
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Your email..." aria-label="Your email...">
+          </div>
+          <div class="mb-4 mt-4">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Subject">
+          </div>
+          <div class="mb-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-custom fw-bold p-3 bg-muted" type="button">SEND MESSAGE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+    </main>
+    <!-- ================== -->
+    <!-- start footer -->
+    <footer class="section p-4 bg-dark">
+      <div class="container">
+        <div class="icons text-center mx-auto">
+          <div class="social-icons d-flex my-4 justify-content-center">
+            <div class=" p-0 m-1 fs-4 icon-border"><i class="fa-brands fa-facebook"></i></div>
+            <div class=" p-0 m-1 fs-4 icon-border"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class=" p-0 m-1 fs-4 icon-border"><i class="fa-brands fa-linkedin"></i></div>
+            <div class=" p-0 m-1 fs-4 icon-border"><i class="fa-brands fa-github"></i></div>
+          </div>
+          <div class="">
+            <p>2018 - 2021 © Kerri. Design by SRBThemes.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- gear box -->
+    <div class="side-box">
+      <i class="fa-solid fa-gear fa-spin-pulse fs-4"></i>
+    </div>
+    <!-- gear box -->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
